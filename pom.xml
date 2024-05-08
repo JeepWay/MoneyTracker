@@ -46,7 +46,7 @@
               <version>1.6.0</version>
               <configuration>
                   <!-- main enter point -->
-                  <mainClass>com.jeepway.front.LoginPage</mainClass>
+                  <mainClass>com.jeepway.control.LoginPage</mainClass>
               </configuration>
           </plugin>
       </plugins>
