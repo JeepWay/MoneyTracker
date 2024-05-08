@@ -18,7 +18,8 @@ public class HomePageUI extends JFrame{
 	 * Create the frame.
 	 */
 	public HomePageUI() {
-		super();		
+		super();	
+		setTitle("Home Page");	
 		setBounds(100, 25, 1300, 750);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		getContentPane().setLayout(null);
