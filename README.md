@@ -4,14 +4,10 @@
 * Use MVC pattern.
 * Support CRUD operations.
 
-<p align="center">
-<img src="figure/login.png" alt=login.png width=100%>
-</p>
+![login.png](figure/login.png)
 
 ## About
 An easy-to-use money tracking window application where users can log in, register, record incomes and expenses, view/search/filter/modify financial records and view financial summaries according to the selected year and month.
-
-
 
 
 ## Software And Tools Required 
