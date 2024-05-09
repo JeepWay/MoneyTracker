@@ -4,12 +4,14 @@
 * Use MVC pattern.
 * Support CRUD operations.
 
-## About
-An easy-to-use money tracking window application where users can log in, register, record income and expenses, view/search/filter/modify financial records and view financial summaries according to the selected year and month.
-
 <p align="center">
 <img src="figure/login.png" alt=login.png width=100%>
 </p>
+
+## About
+An easy-to-use money tracking window application where users can log in, register, record incomes and expenses, view/search/filter/modify financial records and view financial summaries according to the selected year and month.
+
+
 
 
 ## Software And Tools Required 
@@ -26,10 +28,10 @@ An easy-to-use money tracking window application where users can log in, registe
     * Database: [MySQL](https://www.mysql.com/downloads/)
 2. Open Eclipse EE.
 3. Clone this repository
-    * Click On File > Import > Git > Projects From Git > Next > Clone URI
-    * Paste `https://github.com/JeepWay/MoneyTracker.git` in URI -> Next
-    * Select master Branch > Next > Select Destination Directory -> Next
-    * Select import as general project -> Next -> Finish
+    * Click On File > Import > Git > Projects From Git(with smart import) > Next
+    * Clone URI > Next > Paste `https://github.com/JeepWay/MoneyTracker.git` in URI > Next
+    * Select master Branch > Next > Select Destination Directory > Next
+    * Ckeckout Import Source > Finish
 4. Create MySQL database
     * Open MySQL Command Prompt or MySQL Workbench
     * Login to the administrator user as : `mysql -u <adminusername> -p`
@@ -40,10 +42,12 @@ An easy-to-use money tracking window application where users can log in, registe
     * Open `src/main/resources/application.properties` file
     * Modify the value of database details according to your installed MySQL admin user setting. db.name is refer to the database of this project, which is default to `moneytracker`.
 6. Build project
-    * Right Click on Project -> Show In -> Terminal -> Paste `mvn clean install` in terminal
-    * Check the output of `mvn clean install` and ensure success build.
+    * Right Click on Project > Maven > Update Project... > Click Force Update > Select moneytracker > OK
+    * Right Click on Project > Run as > Maven Build > Paste `clean install` in the goals field > apply > run
+    * Check the output in console and make ensure success build.
 7. Run application
-    * Paste `mvn exec:java` in terminal
+    * Right Click on Project > Run as > Maven Build > Paste `exec:java` in the goals field > apply > run
+    * For simplicity, you can just open terminal, then paste `mvn exec:java` command 
 8. Login
     * The default username and password is `demo` and `8888`
     * If you want to create the new user, just click signup page to create new user information
@@ -56,7 +60,7 @@ An easy-to-use money tracking window application where users can log in, registe
 2. Clone this repository
     * Open terminal 
     * Paste `git clone https://github.com/JeepWay/MoneyTracker.git` in terminal
-    * `cd moneytracker` 
+    * `cd MoneyTracker` 
 3. Create MySQL database
     * Open MySQL Command Prompt or MySQL Workbench
     * Login to the administrator user as : `mysql -u <adminusername> -p`
@@ -107,7 +111,6 @@ An easy-to-use money tracking window application where users can log in, registe
 |   |   ├── PanelCardDashBoardUI.java
 |   |   ├── PanelCardHistoryUI.java
 |   |   ├── SignupPageUI.java
-|   |   ├── SwingCalendarUI.java
 ├── resources
 |   ├── icon
 |   |   ├── *.png
@@ -132,24 +135,24 @@ Furthermore, you can also click the question marks in window application which i
 
 If your are familiar with english, we also provide the english version of the tour in [`MoneyTrackerTour.en-US.md`](MoneyTrackerTour.en-US.md)
 
-## Application Sanpshot
+## Application Snapshot
 <p align="center">
-<img src="figure/login.png" alt=login.png width=90%>
+<img src="figure/login.png" alt=login.png width=100%>
 </p>
 <p align="center">
-<img src="figure/signup.png" alt=signup.png width=90%>
+<img src="figure/signup.png" alt=signup.png width=100%>
 </p>
 <p align="center">
-<img src="figure/dashboard.png" alt=dashboard.png width=90%>
+<img src="figure/dashboard.png" alt=dashboard.png width=100%>
 </p>
 <p align="center">
-<img src="figure/history.png" alt=history.png width=90%>
+<img src="figure/history.png" alt=history.png width=100%>
 </p>
 <p align="center">
-<img src="figure/addexpense.png" alt=addexpense.png width=90%>
+<img src="figure/addexpense.png" alt=addexpense.png width=100%>
 </p>
 <p align="center">
-<img src="figure/addincome.png" alt=addincome.png width=90%>
+<img src="figure/addincome.png" alt=addincome.png width=100%>
 </p>
 
 
